@@ -48,6 +48,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Longshot
 
+# Recorder
+PRODUCT_PACKAGES += \
+    Recorder
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
