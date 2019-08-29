@@ -128,6 +128,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# Cutout control overlay
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+
 # Filesystems tools
 PRODUCT_PACKAGES += \
     fsck.exfat \
@@ -163,5 +167,8 @@ include vendor/gapps/config.mk
 
 # Cesium Style
 include vendor/cesiumstyle/config.mk
+
+# Themes
+include vendor/themes/config.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
