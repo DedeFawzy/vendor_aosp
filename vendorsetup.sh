@@ -1,6 +1,4 @@
-for device in $(python vendor/aosp/tools/get_official_devices.py)
+for combo in $(curl -s https://raw.githubusercontent.com/CesiumOS/vendor_aosp/pie/cesium.devices | sed -e 's/#.*$//' | awk '{printf "aosp_%s-%s\n", $1, $2}')
 do
-for var in user userdebug; do
-add_lunch_combo aosp_$device-$var
-done
+    add_lunch_combo $combo
 done

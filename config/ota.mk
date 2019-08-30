@@ -8,7 +8,7 @@ CUSTOM_PROPERTIES += \
     sys.ota.disable_uncrypt=1
 
 PRODUCT_PACKAGES += \
-    Updates
+    Updater
 
 PRODUCT_COPY_FILES += \
     vendor/aosp/config/permissions/org.cesium.ota.xml:system/etc/permissions/org.cesium.ota.xml
